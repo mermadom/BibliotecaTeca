@@ -1,4 +1,5 @@
-﻿namespace BibliotecaTeca.Models
+﻿using System;
+namespace BibliotecaTeca.Models
 {
     public class Emprestimo
     {
@@ -8,5 +9,7 @@
         public Usuario Usuario { get; set; }
 
         public Biblioteca Biblioteca { get; set; }
+        
+        public DateTime DataEntrega { get; set; }
     }
 }
