@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="scriptHome.js"></script>
+	</head>
+	<body>
+		<div class="form">
+			<!-- Cadastro do Usuário-->
+			<input id="nome-completo"   placeholder="Nome Completo"      type="text"     onblur="validaNome(this.id)"/>
+			<input id="email"           placeholder="Email"              type="email"/>
+			<input id="senha"           placeholder="Senha"              type="password" onblur="validaSenha(this.id)"/>
+			<input id="confirma-senha"  placeholder="Confirmar Senha"    type="password" onblur="confirmaSenha(this.id)"/>
+			<button onclick="cadastrarUsuario()">Cadastrar</button>
+			<p>Ir para <a href="ListaUsuario.html">lista de usuários</a></p>
+			<br>
+			<!-- Cadastro do livro-->
+			<input id="nome-livro"   placeholder="Nome do livro"      type="text"   />
+			<input id="nome-descricao"   placeholder="Descrição"      type="text"   />
+			<input id="nome-autor"   placeholder="Autor"      		  type="text"   />
+			<input id="nome-editora"   placeholder="Editora"          type="text"    >
+			<input id="numero-paginas"   placeholder="Número de páginas"      type="number"/>
+			<button onclick="cadastrarLivro()">Cadastrar</button>
+			<p>Ir para <a href="ListaLivros.html">lista de livros</a></p>
+			<br>
+		</div>
+	</body>
+</html>
